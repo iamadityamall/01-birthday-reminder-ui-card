@@ -2,9 +2,14 @@ import React from "react";
 import List from "./List";
 import { data } from "./data";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const App = () => {
   const [people, setPeople] = useState(data);
+
+  useEffect(() => {
+    document.title = "birthday-reminder-ui"
+  },[])
 
   const clearItems = () => {
     setPeople([]);
