@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <main className="flex justify-center items-center h-screen bg-blue-300">
-      <section className="bg-white flex flex-col font-mono w-[60vw] p-6 rounded-lg space-y-3 shadow-lg">
+      <section className="bg-white flex flex-col font-mono w-[80vw] p-6 rounded-lg space-y-3 shadow-lg lg:w-[50vw]">
         <h3>{people.length} birthdays remaining</h3>
         <List people={people} setPeople={setPeople} />
         <button
